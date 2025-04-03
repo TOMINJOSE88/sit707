@@ -304,11 +304,10 @@ public class DateUtilTest {
 	    Assert.assertEquals(30, date.getDay());
 	}
 	
-
 	    @Test
-	    public void test1A_1_6_1994_ShouldIncrementTo_2_6_1994() {
+	    public void test1B_1_6_1994_ShouldIncrementTo_2_6_1994() {
 	        DateUtil date = new DateUtil(1, 6, 1994);
-	        System.out.println("Test 1A: 1-6-1994 should increment to 2-6-1994");
+	        System.out.println("Test 1B: 1-6-1994 should increment to 2-6-1994");
 	        date.increment();
 	        System.out.println("Result: " + date.getDay() + "-" + date.getMonth() + "-" + date.getYear());
 	        Assert.assertEquals(2, date.getDay());
@@ -317,7 +316,7 @@ public class DateUtilTest {
 	    }
 
 	    @Test
-	    public void test2A_2_6_1994_ShouldIncrementTo_3_6_1994() {
+	    public void test2B_2_6_1994_ShouldIncrementTo_3_6_1994() {
 	        DateUtil date = new DateUtil(2, 6, 1994);
 	        System.out.println("Test 2A: 2-6-1994 should increment to 3-6-1994");
 	        date.increment();
@@ -328,9 +327,9 @@ public class DateUtilTest {
 	    }
 
 	    @Test
-	    public void test3A_15_6_1994_ShouldIncrementTo_16_6_1994() {
+	    public void test3B_15_6_1994_ShouldIncrementTo_16_6_1994() {
 	        DateUtil date = new DateUtil(15, 6, 1994);
-	        System.out.println("Test 3A: 15-6-1994 should increment to 16-6-1994");
+	        System.out.println("Test 3B: 15-6-1994 should increment to 16-6-1994");
 	        date.increment();
 	        System.out.println("Result: " + date.getDay() + "-" + date.getMonth() + "-" + date.getYear());
 	        Assert.assertEquals(16, date.getDay());
@@ -339,9 +338,9 @@ public class DateUtilTest {
 	    }
 
 	    @Test
-	    public void test4A_30_6_1994_ShouldIncrementTo_1_7_1994() {
+	    public void test4B_30_6_1994_ShouldIncrementTo_1_7_1994() {
 	        DateUtil date = new DateUtil(30, 6, 1994);
-	        System.out.println("Test 4A: 30-6-1994 should increment to 1-7-1994");
+	        System.out.println("Test 4B: 30-6-1994 should increment to 1-7-1994");
 	        date.increment();
 	        System.out.println("Result: " + date.getDay() + "-" + date.getMonth() + "-" + date.getYear());
 	        Assert.assertEquals(1, date.getDay());
@@ -351,7 +350,7 @@ public class DateUtilTest {
 
 	    @Test
 	    public void testInvalidDate_31June1994_ShouldThrowException() {
-	        System.out.println("Test Case: 31-6-1994 should throw an exception (RuntimeException expected)");
+	        System.out.println("Test 5B Case: 31-6-1994 should throw an exception (RuntimeException expected)");
 	        try {
 	            DateUtil date = new DateUtil(31, 6, 1994);
 	            // If execution reaches here, no exception was thrown, so the test should fail
@@ -366,9 +365,9 @@ public class DateUtilTest {
 
 
 	    @Test
-	    public void test6A_15_1_1994_ShouldIncrementTo_16_1_1994() {
+	    public void test6B_15_1_1994_ShouldIncrementTo_16_1_1994() {
 	        DateUtil date = new DateUtil(15, 1, 1994);
-	        System.out.println("Test 6A: 15-1-1994 should increment to 16-1-1994");
+	        System.out.println("Test 6B: 15-1-1994 should increment to 16-1-1994");
 	        date.increment();
 	        System.out.println("Result: " + date.getDay() + "-" + date.getMonth() + "-" + date.getYear());
 	        Assert.assertEquals(16, date.getDay());
@@ -377,9 +376,9 @@ public class DateUtilTest {
 	    }
 
 	    @Test
-	    public void test7A_15_2_1994_ShouldIncrementTo_16_2_1994() {
+	    public void test7B_15_2_1994_ShouldIncrementTo_16_2_1994() {
 	        DateUtil date = new DateUtil(15, 2, 1994);
-	        System.out.println("Test 7A: 15-2-1994 should increment to 16-2-1994");
+	        System.out.println("Test 7B: 15-2-1994 should increment to 16-2-1994");
 	        date.increment();
 	        System.out.println("Result: " + date.getDay() + "-" + date.getMonth() + "-" + date.getYear());
 	        Assert.assertEquals(16, date.getDay());
@@ -388,9 +387,9 @@ public class DateUtilTest {
 	    }
 
 	    @Test
-	    public void test8A_15_11_1994_ShouldIncrementTo_16_11_1994() {
+	    public void test8B_15_11_1994_ShouldIncrementTo_16_11_1994() {
 	        DateUtil date = new DateUtil(15, 11, 1994);
-	        System.out.println("Test 8A: 15-11-1994 should increment to 16-11-1994");
+	        System.out.println("Test 8B: 15-11-1994 should increment to 16-11-1994");
 	        date.increment();
 	        System.out.println("Result: " + date.getDay() + "-" + date.getMonth() + "-" + date.getYear());
 	        Assert.assertEquals(16, date.getDay());
@@ -399,9 +398,9 @@ public class DateUtilTest {
 	    }
 
 	    @Test
-	    public void test9A_15_12_1994_ShouldIncrementTo_16_12_1994() {
+	    public void test9B_15_12_1994_ShouldIncrementTo_16_12_1994() {
 	        DateUtil date = new DateUtil(15, 12, 1994);
-	        System.out.println("Test 9A: 15-12-1994 should increment to 16-12-1994");
+	        System.out.println("Test 9B: 15-12-1994 should increment to 16-12-1994");
 	        date.increment();
 	        System.out.println("Result: " + date.getDay() + "-" + date.getMonth() + "-" + date.getYear());
 	        Assert.assertEquals(16, date.getDay());
@@ -410,9 +409,9 @@ public class DateUtilTest {
 	    }
 
 	    @Test
-	    public void test10A_15_6_1700_ShouldIncrementTo_16_6_1700() {
+	    public void test10B_15_6_1700_ShouldIncrementTo_16_6_1700() {
 	        DateUtil date = new DateUtil(15, 6, 1700);
-	        System.out.println("Test 10A: 15-6-1700 should increment to 16-6-1700");
+	        System.out.println("Test 10B: 15-6-1700 should increment to 16-6-1700");
 	        date.increment();
 	        System.out.println("Result: " + date.getDay() + "-" + date.getMonth() + "-" + date.getYear());
 	        Assert.assertEquals(16, date.getDay());
@@ -421,9 +420,9 @@ public class DateUtilTest {
 	    }
 
 	    @Test
-	    public void test11A_15_6_1701_ShouldIncrementTo_16_6_1701() {
+	    public void test11B_15_6_1701_ShouldIncrementTo_16_6_1701() {
 	        DateUtil date = new DateUtil(15, 6, 1701);
-	        System.out.println("Test 11A: 15-6-1701 should increment to 16-6-1701");
+	        System.out.println("Test 11B: 15-6-1701 should increment to 16-6-1701");
 	        date.increment();
 	        System.out.println("Result: " + date.getDay() + "-" + date.getMonth() + "-" + date.getYear());
 	        Assert.assertEquals(16, date.getDay());
@@ -432,9 +431,9 @@ public class DateUtilTest {
 	    }
 
 	    @Test
-	    public void test12A_15_6_2023_ShouldIncrementTo_16_6_2023() {
+	    public void test12B_15_6_2023_ShouldIncrementTo_16_6_2023() {
 	        DateUtil date = new DateUtil(15, 6, 2023);
-	        System.out.println("Test 12A: 15-6-2023 should increment to 16-6-2023");
+	        System.out.println("Test 12B: 15-6-2023 should increment to 16-6-2023");
 	        date.increment();
 	        System.out.println("Result: " + date.getDay() + "-" + date.getMonth() + "-" + date.getYear());
 	        Assert.assertEquals(16, date.getDay());
@@ -443,9 +442,9 @@ public class DateUtilTest {
 	    }
 
 	    @Test
-	    public void test13A_15_6_2024_ShouldIncrementTo_16_6_2024() {
+	    public void test13B_15_6_2024_ShouldIncrementTo_16_6_2024() {
 	        DateUtil date = new DateUtil(15, 6, 2024);
-	        System.out.println("Test 13A: 15-6-2024 should increment to 16-6-2024");
+	        System.out.println("Test 13B: 15-6-2024 should increment to 16-6-2024");
 	        date.increment();
 	        System.out.println("Result: " + date.getDay() + "-" + date.getMonth() + "-" + date.getYear());
 	        Assert.assertEquals(16, date.getDay());
